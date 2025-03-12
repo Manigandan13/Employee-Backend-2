@@ -10,7 +10,7 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")  // Allow cross-origin requests to all endpoints
-                .allowedOrigins("http://localhost:5173")  // React development server URL
+                .allowedOrigins("https://employee-frontend-delta-gold.vercel.app")  // React development server URL
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH")  // Allowed HTTP methods
                 .allowedHeaders("*")  // Allow all headers
                 .allowCredentials(true);  // Allow credentials (cookies, authorization headers)
